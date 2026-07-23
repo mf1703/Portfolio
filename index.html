@@ -112,11 +112,12 @@
   .moreRow .more{margin-top:0;flex:0 0 auto}
   .moreRow .sketch{width:27cqw;height:auto;flex:0 0 auto;margin-top:.5cqw}
   /* ===== current work 2026 (23.07.) ===== */
-  .now-sec{padding:1cqw 6cqw 7cqw 0}
+  .now-sec{padding:4.5cqw 0 7cqw 0}
   .nowbox{position:relative;container-type:inline-size}
-  .nowbox>img{width:100%;display:block}
-  .now-title{position:absolute;left:2.5%;top:8.4%;font-weight:700;font-size:2.917cqw;letter-spacing:-.01em;z-index:4}
-  .now-chip{position:absolute;z-index:4;font-size:1.019cqw;line-height:1.32;padding:.55em .75em .65em;box-sizing:border-box}
+  .now-title{position:relative;z-index:5;margin:0 0 0 2.5cqw;font-weight:700;font-size:2.742cqw;letter-spacing:-.01em}
+  .nowcv{position:relative;width:107.77cqw;margin:-15.1cqw 0 -18.1cqw -2.49cqw}
+  .nowcv>img{width:100%;display:block}
+  .now-chip{position:absolute;z-index:4;font-size:1.098cqw;line-height:1.32;padding:.55em .75em .65em;box-sizing:border-box}
   .now-chip b{display:block;font-weight:700;margin-bottom:.55em}
   .now-c1{left:4.72%;top:38.9%;width:21.3%;background:#468eff;color:#fff}
   .now-c2{left:4.72%;top:57.3%;width:18.2%;background:#b06f4b;color:#fff}
@@ -126,9 +127,10 @@
   .fx.fx-pop-l,.fx.fx-pop-r{transition:opacity .8s ease,transform .8s cubic-bezier(.18,.9,.24,1.12)}
   .fx.fx-title{transform:translateX(-34px)}
   @media (max-width:719px){
-    .now-sec{padding-right:0}
+    .now-sec{padding:4.5cqw 0 7cqw 0}
+    .nowcv{width:100%;margin:-14.05cqw 0 -16.7cqw 0}
     .now-chip{position:static;width:auto;margin:8px 0 0;font-size:13px;padding:10px 12px}
-    .now-title{font-size:4.6cqw}
+    .now-title{font-size:4.6cqw;margin-bottom:0}
     .fx.fx-pop-l,.fx.fx-pop-r{transform:translateY(16px)}
   }
   /* ===== v4 Stages (Ebenen + Animation, 22.07.) ===== */
@@ -198,11 +200,13 @@
   </section>
   <section class="now-sec">
   <div class="nowbox">
-    <img src="now_bg.webp" srcset="now_bg.webp 1080w, now_bg@2x.webp 2160w" sizes="min(100vw,1240px)" style="aspect-ratio:2160/1429" alt="Current work 2026" loading="lazy">
     <div class="now-title fx fx-title">current work...</div>
+    <div class="nowcv">
+    <img src="now_bg.webp" srcset="now_bg.webp 1080w, now_bg@2x.webp 2160w" sizes="min(108vw,1340px)" style="aspect-ratio:2160/1429" alt="Current work 2026" loading="lazy">
     <div class="now-chip now-c1 fx fx-pop-l" style="transition-delay:.12s"><b>Building my own tools</b>Example: Package analysis and proportion checks run directly on 2D design sketches in Photoshop</div>
     <div class="now-chip now-c2 fx fx-pop-l" style="transition-delay:.26s"><b>Workflow orchestration</b>Building 2D and 3D design pipelines: AI models and steps wired into one repeatable process</div>
     <div class="now-chip now-c3 fx fx-pop-r" style="transition-delay:.40s"><b>Product design — Request.Change</b>Example: Vehicle and product design in a mobility context — presented at EICMA, Milan</div>
+    </div>
   </div>
 </section>
 <section class="stage" id="teaser" style="background:linear-gradient(180deg,#ffffff,#a28987)">
